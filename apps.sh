@@ -88,6 +88,7 @@ zypper --non-interactive install code
 zypper --non-interactive install python311 nodejs npm qjackctl discord git gh
 
 #su to peter and run git.sh
+wget https://raw.githubusercontent.com/huskynz/opensuse-setup/master/git.sh
 if [ -d "/home/peter/repos/webv4" ]
 then
     echo "Directory /home/peter/repos/webv4 exists. skipping cloneing"
@@ -98,6 +99,7 @@ if [ -d "/home/peter/repos/peter-v2" ]
 then
     echo "Directory /home/peter/repos/peter-v2 exists. skipping cloneing"
 else
+    
     /bin/su -s /bin/bash -c './git.sh' peter
 fi
 
