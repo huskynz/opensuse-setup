@@ -102,6 +102,8 @@ else
     
     /bin/su -s /bin/bash -c './git.sh' peter
 fi
+#clean up git.sh
+rm git.sh
 
 
 
